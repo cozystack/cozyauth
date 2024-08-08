@@ -1,0 +1,14 @@
+---
+source: tests/cli.rs
+expression: assert.get_output()
+input_file: tests/cli/inputs/help.toml
+---
+Output {
+    status: ExitStatus(
+        unix_wait_status(
+            0,
+        ),
+    ),
+    stdout: "Easy Passkey authentication for Supabase and Postgres\n\nUsage: cozyauth <COMMAND>\n\nCommands:\n  server  Start the server\n  db      \n  help    Print this message or the help of the given subcommand(s)\n\nOptions:\n  -h, --help  Print help\n",
+    stderr: "",
+}

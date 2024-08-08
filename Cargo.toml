@@ -33,9 +33,12 @@ webauthn-rs = { version = "0.5.0", features = ["danger-allow-state-serialisation
 webauthn-rs-proto = "0.5.0"
 
 [dev-dependencies]
+assert_cmd = "2.0.15"
 base64 = "0.22.1"
 http-body-util = "0.1.2"
+insta = { version = "1.39.0", features = ["glob"] }
 mime = "0.3.17"
 rand = "0.8.5"
 sha256 = "1.5.0"
+toml = "0.8.19"
 tower = { version = "0.4.13", features = ["util"] }

@@ -1,0 +1,14 @@
+---
+source: tests/cli.rs
+expression: assert.get_output()
+input_file: tests/cli/inputs/db_init.toml
+---
+Output {
+    status: ExitStatus(
+        unix_wait_status(
+            0,
+        ),
+    ),
+    stdout: "Init Postgres\n",
+    stderr: "",
+}

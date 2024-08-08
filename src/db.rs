@@ -11,6 +11,10 @@ pub(crate) async fn create_pool(settings: &Settings) -> PgPool {
         .expect("cannot create database pool")
 }
 
+pub(crate) async fn init() {
+    println!("Init Postgres")
+}
+
 pub(crate) async fn migrate(settings: &Settings) {
     let pool = create_pool(settings).await;
     match MIGRATOR.run(&pool).await {
